@@ -20,6 +20,13 @@
 
     <link rel="manifest" href="site.webmanifest">
     <meta name="theme-color" content="#fafafa">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Ubuntu:ital,wght@0,300;0,500;1,300&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body class="page">
@@ -41,11 +48,12 @@
 
     <main class="page_main">
         <section class="hero">
-            <div class="hero_background"><img class="hero_background-img" src="img/placeholder.svg"
-                    alt="hero background"></div>
-            <h1 class="hero_text">Metro style</h1>
-            <h1 class="hero_text">Quick on the feet</h1>
-            <h1 class="hero_text">Metro Styling reinvented</h1>
+            <img class="hero_background-img" src="img/banner.png" alt="hero background">
+            <div class="hero_text-container">
+                <h1 class="hero_text hero_text-top">Metro style</h1>
+                <h1 class="hero_text hero_text-mid">Quick on the feet</h1>
+                <h1 class="hero_text hero_text-btm">Metro Styling reinvented</h1>
+            </div>
         </section>
 
         <section class="intro">
@@ -109,10 +117,10 @@
                 <p class="blog_description">Read up on our latest work</p>
             </header>
             <div class="blog_items">
-                <div class="blog_item">
-                    <img class="item_img" src="img/placeholder.svg" alt="blog image">
+                <div class="blog_item blog_item-tablet-rowspan">
+                    <img class="blog_item_img" src="img/IMG_Content.png" alt="blog image">
                     <div class="item_date">
-                        <span class="date_day">29</span>
+                        <div class="date_day">29</div>
                         <div class="date_m-y">Jan. 2025</div>
                     </div>
                     <div class="item_text">
@@ -120,11 +128,11 @@
                         <p class="text_subtitle">Photography</p>
                     </div>
                     <div class="item_icon">
-                        <img src="img/placeholder.svg" alt="blog icon">
+                        <img src="img/BG_Icon.svg" alt="blog icon">
                     </div>
                 </div>
                 <div class="blog_item">
-                    <img class="item_img" src="img/placeholder.svg" alt="blog image">
+                    <img class="blog_item_img" src="img/IMG_Content.png" alt="blog image">
                     <div class="item_date">
                         <span class="date_day">29</span>
                         <div class="date_m-y">Jan. 2025</div>
@@ -134,11 +142,11 @@
                         <p class="text_subtitle">Photography</p>
                     </div>
                     <div class="item_icon">
-                        <img src="img/placeholder.svg" alt="blog icon">
+                        <img src="img/BG_Icon.svg" alt="blog icon">
                     </div>
                 </div>
                 <div class="blog_item">
-                    <img class="item_img" src="img/placeholder.svg" alt="blog image">
+                    <img class="blog_item_img" src="img/IMG_Content.png" alt="blog image">
                     <div class="item_date">
                         <span class="date_day">29</span>
                         <div class="date_m-y">Jan. 2025</div>
@@ -148,7 +156,7 @@
                         <p class="text_subtitle">Photography</p>
                     </div>
                     <div class="item_icon">
-                        <img src="img/placeholder.svg" alt="blog icon">
+                        <img src="img/BG_Icon.svg" alt="blog icon">
                     </div>
                 </div>
             </div>
@@ -162,38 +170,32 @@
             <div class="portfolio_items">
                 <div class="portfolio_item">
                     <a class="item_link" href="#">
-                        <img class="item_img" src="img/placeholder.svg" alt="portfolio img">
-                        <p class="item_title">placeholder</p>
+                        <img class="portfolio_item_img" src="img/IMG_Content.png" alt="portfolio img">
                     </a>
                 </div>
                 <div class="portfolio_item">
                     <a class="item_link" href="#">
-                        <img class="item_img" src="img/placeholder.svg" alt="portfolio img">
-                        <p class="item_title">placeholder</p>
+                        <img class="portfolio_item_img" src="img/IMG_Content.png" alt="portfolio img">
                     </a>
                 </div>
                 <div class="portfolio_item">
                     <a class="item_link" href="#">
-                        <img class="item_img" src="img/placeholder.svg" alt="portfolio img">
-                        <p class="item_title">placeholder</p>
+                        <img class="portfolio_item_img" src="img/IMG_Content.png" alt="portfolio img">
                     </a>
                 </div>
                 <div class="portfolio_item">
                     <a class="item_link" href="#">
-                        <img class="item_img" src="img/placeholder.svg" alt="portfolio img">
-                        <p class="item_title">placeholder</p>
+                        <img class="portfolio_item_img" src="img/IMG_Content.png" alt="portfolio img">
                     </a>
                 </div>
                 <div class="portfolio_item">
                     <a class="item_link" href="#">
-                        <img class="item_img" src="img/placeholder.svg" alt="portfolio img">
-                        <p class="item_title">placeholder</p>
+                        <img class="portfolio_item_img" src="img/IMG_Content.png" alt="portfolio img">
                     </a>
                 </div>
                 <div class="portfolio_item">
                     <a class="item_link" href="#">
-                        <img class="item_img" src="img/placeholder.svg" alt="portfolio img">
-                        <p class="item_title">placeholder</p>
+                        <img class="portfolio_item_img" src="img/IMG_Content.png" alt="portfolio img">
                     </a>
                 </div>
             </div>
@@ -240,7 +242,7 @@
         </div>
 
         <div class="footer_items">
-            <div class="footer_item">
+            <div class="footer_item-about">
                 <h3 class="item_title-about">About Us</h3>
                 <p class="item_description">
                     Minions ipsum potatoooo potatoooo uuuhhh. Chasy poulet tikka masala jiji
@@ -252,19 +254,21 @@
                 </p>
             </div>
 
-            <div class="footer_item">
+            <div class="footer_item-ig">
                 <h3 class="item_title-ig">Instagram</h3>
-                <a class="item_link" href="#"><img class="item_img" src="img/placeholder.svg" alt="ig img"></a>
-                <a class="item_link" href="#"><img class="item_img" src="img/placeholder.svg" alt="ig img"></a>
-                <a class="item_link" href="#"><img class="item_img" src="img/placeholder.svg" alt="ig img"></a>
-                <a class="item_link" href="#"><img class="item_img" src="img/placeholder.svg" alt="ig img"></a>
-                <a class="item_link" href="#"><img class="item_img" src="img/placeholder.svg" alt="ig img"></a>
-                <a class="item_link" href="#"><img class="item_img" src="img/placeholder.svg" alt="ig img"></a>
-                <a class="item_link" href="#"><img class="item_img" src="img/placeholder.svg" alt="ig img"></a>
-                <a class="item_link" href="#"><img class="item_img" src="img/placeholder.svg" alt="ig img"></a>
+                <div class="ig_items">
+                    <a class="item_link" href="#"><img class="ig_item_img" src="img/igPhoto.png" alt="ig img"></a>
+                    <a class="item_link" href="#"><img class="ig_item_img" src="img/igPhoto.png" alt="ig img"></a>
+                    <a class="item_link" href="#"><img class="ig_item_img" src="img/igPhoto.png" alt="ig img"></a>
+                    <a class="item_link" href="#"><img class="ig_item_img" src="img/igPhoto.png" alt="ig img"></a>
+                    <a class="item_link" href="#"><img class="ig_item_img" src="img/igPhoto.png" alt="ig img"></a>
+                    <a class="item_link" href="#"><img class="ig_item_img" src="img/igPhoto.png" alt="ig img"></a>
+                    <a class="item_link" href="#"><img class="ig_item_img" src="img/igPhoto.png" alt="ig img"></a>
+                    <a class="item_link" href="#"><img class="ig_item_img" src="img/igPhoto.png" alt="ig img"></a>
+                </div>
             </div>
 
-            <div class="footer_item">
+            <div class="footer_item-mews">
                 <h3 class="item_title-news">What&rsquo;s New on Mastodon</h3>
                 <p class="item_description">
                     <span class="description_users">@Minions</span> - ipsum banana potatoooo uuuhhh. Chasy poulet tikka
@@ -292,16 +296,16 @@
                 </p>
             </div>
 
-            <div class="footer_item">
+            <div class="footer_item-track">
                 <h3 class="item_title-track">Track us!</h3>
-                <a class="item_link" href="#"><img src="img/placeholder.svg" alt="media icon"></a>
-                <a class="item_link" href="#"><img src="img/placeholder.svg" alt="media icon"></a>
-                <a class="item_link" href="#"><img src="img/placeholder.svg" alt="media icon"></a>
-                <a class="item_link" href="#"><img src="img/placeholder.svg" alt="media icon"></a>
-                <a class="item_link" href="#"><img src="img/placeholder.svg" alt="media icon"></a>
+                <a class="item_link" href="#"><img class="track-img" src="img/placeholder.svg" alt="media icon"></a>
+                <a class="item_link" href="#"><img class="track-img" src="img/placeholder.svg" alt="media icon"></a>
+                <a class="item_link" href="#"><img class="track-img" src="img/placeholder.svg" alt="media icon"></a>
+                <a class="item_link" href="#"><img class="track-img" src="img/placeholder.svg" alt="media icon"></a>
+                <a class="item_link" href="#"><img class="track-img" src="img/placeholder.svg" alt="media icon"></a>
                 <form class="item_form">
                     <input class="form_box" type="email" placeholder="Enter your Email...">
-                    <button class="form_button" type="submit"><img src="img/placeholder.svg"
+                    <button class="form_button" type="submit"><img class="button-img" src="img/placeholder.svg"
                             alt="submit button"></button>
                 </form>
             </div>
