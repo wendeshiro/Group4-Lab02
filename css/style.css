@@ -4,41 +4,44 @@ html {
     font-family: Ubuntu;
 }
 
-.blog {
+.blog,
+.portfolio {
     display: grid;
-    row-gap: 1em;
     justify-items: center;
     align-items: center;
     margin: 0 auto;
     width: 90%;
 }
 
-.blog_title {
+.blog_title,
+.portfolio_title {
     text-align: center;
     font-size: 28px;
 }
 
-.blog_description {
+.blog_description,
+.portfolio_description {
     font-size: 12px;
-    color: #A3A3A3;
+    color: #a3a3a3;
     text-align: center;
     font-weight: lighter;
 }
 
-.blog_item {
+.blog_item,
+.portfolio_item {
     position: relative;
     width: 100%;
     overflow: hidden;
-    margin: 20px 0;
 }
 
-.blog_item_img {
+.blog_item_img,
+.portfolio_item_img {
     width: 100%;
     display: block;
 }
 
 .item_date {
-    background-color: #CA6B65;
+    background-color: #ca6b65;
     width: 50px;
     height: 54px;
     text-align: center;
@@ -65,7 +68,7 @@ html {
 }
 
 .item_text {
-    background-color: #19B2DE;
+    background-color: #19b2de;
     width: 100%;
     height: 54px;
     padding: 0 15px;
@@ -102,14 +105,25 @@ html {
 }
 
 @media screen and (max-width: 39.9375em) {
-    .blog {
+
+    .blog,
+    .portfolio {
         grid-template-columns: 1fr;
+    }
+
+    .blog_item,
+    .portfolio_item {
+        width: 100%;
+        margin: 20px 0;
     }
 }
 
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-    .blog {
+
+    .blog,
+    .portfolio {
         grid-template-rows: 100px 3fr;
+        row-gap: 1em;
     }
 
     .blog_items {
@@ -118,22 +132,43 @@ html {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 2fr 1fr;
         column-gap: 1em;
+        row-gap: 1em;
     }
 
     .blog_item-tablet-rowspan {
         grid-column: 1 / -1;
     }
+
+    .portfolio_items {
+        grid-row: 2 / 3;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1em;
+        row-gap: 1em;
+    }
 }
 
 @media screen and (min-width: 64em) {
-    .blog {
+
+    .blog,
+    .portfolio {
         grid-template-rows: 100px 2fr;
+        row-gap: 1em;
     }
 
     .blog_items {
         grid-row: 2 / 3;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        column-gap: 1em;
+        column-gap: 1.5em;
+    }
+
+    .portfolio_items {
+        grid-row: 2 / 3;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr;
+        column-gap: 1.5em;
+        row-gap: 1.5em;
     }
 }
