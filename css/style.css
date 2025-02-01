@@ -104,6 +104,14 @@ html {
     right: 10px;
 }
 
+.item_title-ig {
+    color: #DE6262;
+    border-bottom: 1px solid #19B2DE;
+    width: 100%;
+    padding-bottom: 10px;
+    grid-column: 1 / -1;
+}
+
 @media screen and (max-width: 39.9375em) {
 
     .blog,
@@ -116,7 +124,12 @@ html {
         width: 100%;
         margin: 20px 0;
     }
+
+    .footer_item-ig {
+        display: none;
+    }
 }
+
 
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
 
@@ -146,6 +159,12 @@ html {
         column-gap: 1em;
         row-gap: 1em;
     }
+
+    .footer_item-ig {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.5em;
+    }
 }
 
 @media screen and (min-width: 64em) {
@@ -170,5 +189,11 @@ html {
         grid-template-rows: 1fr 1fr;
         column-gap: 1.5em;
         row-gap: 1.5em;
+    }
+
+    .footer_item-ig {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5em;
     }
 }
