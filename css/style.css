@@ -112,6 +112,40 @@ html {
     grid-column: 1 / -1;
 }
 
+.hero {
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.hero_text {
+    text-align: left;
+    background-color: white;
+    height: auto;
+    display: block;
+    padding: 0.5em;
+}
+
+.hero_text-top {
+    border-left: 10px solid #186AA2;
+    width: 140px;
+    font-weight: 500;
+}
+
+.hero_text-mid {
+    border-left: 10px solid #DE6262;
+    width: 210px;
+    font-weight: 500;
+}
+
+.hero_text-btm {
+    border-left: 10px solid #FFB901;
+    width: 300px;
+    font-weight: 500;
+}
+
+
 @media screen and (max-width: 39.9375em) {
 
     .blog,
@@ -125,7 +159,8 @@ html {
         margin: 20px 0;
     }
 
-    .footer_item-ig {
+    .footer_item-ig,
+    .hero {
         display: none;
     }
 }
@@ -165,6 +200,35 @@ html {
         grid-template-columns: repeat(4, 1fr);
         gap: 0.5em;
     }
+
+    .hero_background-img {
+        width: 100%;
+        max-width: 980px;
+        min-width: 800px;
+    }
+
+    .hero_text-container {
+        position: absolute;
+        top: 30%;
+    }
+
+    .hero_text-top,
+    .hero_text-mid,
+    .hero_text-btm {
+        font-size: 18px;
+    }
+
+    .hero_text-top {
+        width: 110px;
+    }
+
+    .hero_text-mid {
+        width: 160px;
+    }
+
+    .hero_text-btm {
+        width: 220px;
+    }
 }
 
 @media screen and (min-width: 64em) {
@@ -195,5 +259,16 @@ html {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 0.5em;
+    }
+
+    .hero_background-img {
+        width: 100%;
+        max-width: 1466px;
+        min-width: 1100px;
+    }
+
+    .hero_text-container {
+        position: absolute;
+        top: 40%;
     }
 }
