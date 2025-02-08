@@ -67,7 +67,8 @@ html {
     font-weight: lighter;
 }
 
-.item_text {
+.item_text,
+.item_text-portfolio {
     background-color: #19b2de;
     width: 100%;
     height: 54px;
@@ -97,7 +98,8 @@ html {
     font-size: 11px;
 }
 
-.item_icon {
+.item_icon,
+.item_icon-portfolio {
     position: absolute;
     z-index: 3;
     bottom: 10px;
@@ -220,6 +222,10 @@ html {
         grid-row: 2 / 3;
     }
 
+    .portfolio_items .item_text-portfolio,
+    .portfolio_items .item_icon-portfolio {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
@@ -320,6 +326,11 @@ html {
         grid-column: 2 / 3;
         grid-row: 2 / 3;
     }
+
+    .portfolio_items .item_text-portfolio,
+    .portfolio_items .item_icon-portfolio {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 64em) {
@@ -393,5 +404,25 @@ html {
 
     .footer_item-track {
         grid-column: 4 / 5;
+    }
+
+    .item_text-portfolio,
+    .item_icon-portfolio {
+        opacity: 0;
+        transition: opacity 0.2s ease-in-out;
+        background-color: rgb(25 178 222 / 0);
+    }
+
+    .portfolio_item:hover .item_text-portfolio {
+        background-color: rgb(25 178 222 / 80%);
+        opacity: 100;
+        width: 100%;
+        height: 100%;
+        padding: 10px 15px;
+        justify-content: flex-end;
+    }
+
+    .portfolio_item:hover .item_icon-portfolio {
+        opacity: 100;
     }
 }
