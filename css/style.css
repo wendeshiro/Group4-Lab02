@@ -2,7 +2,9 @@ html {
     color: black;
     font-size: 1em;
     font-family: Ubuntu;
+
 }
+
 
 .blog,
 .portfolio {
@@ -150,6 +152,8 @@ html {
 .page_footer {
     display: grid;
     grid-template-rows: 1fr 4fr;
+    background-color: #0E2E4E;
+
 }
 
 .footer_intro {
@@ -226,7 +230,49 @@ html {
     .portfolio_items .item_icon-portfolio {
         display: none;
     }
+
+    /* Mobile Version Top Logo */
+    .header_logo {
+        display: grid;
+        place-items: left;
+        padding: 20px;
+        /* border: solid 5px cornflowerblue; */
+    }
+
+    .header_container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .header_nav {
+        display: none;
+    }
+
+
+    /* CEO Intro Portion Mobile */
+    .footer_intro {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        place-content: center;
+        padding: 30px 70px 30px 70px;
+    }
+
+    .footer_intro .intro_text {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        padding: 0px 20px 0px 20px;
+        color: white;
+
+    }
+
+    .intro_img {
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
 }
+
+
 
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
 
@@ -305,6 +351,9 @@ html {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
+        column-gap: 20px;
+        padding: 0 20px 0 20px;
+
     }
 
     .footer_item-about {
@@ -330,6 +379,38 @@ html {
     .portfolio_items .item_text-portfolio,
     .portfolio_items .item_icon-portfolio {
         display: none;
+    }
+
+    .footer_intro {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        place-content: center;
+        padding: 30px 70px 30px 70px;
+    }
+
+    .footer_intro .intro_text {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        padding: 0px 20px 0px 20px;
+        color: white;
+
+
+    }
+
+    .intro_img {
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .item_title-about {
+        color: #FFB901;
+        padding: 0 0px 20px 0px;
+        border-bottom: 1px solid #21C183;
+    }
+
+    .item_description {
+        color: white;
+
     }
 }
 
@@ -425,4 +506,37 @@ html {
     .portfolio_item:hover .item_icon-portfolio {
         opacity: 100;
     }
+
+    .footer_intro {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        place-content: center;
+        padding: 30px 70px 30px 70px;
+    }
+
+    .footer_intro .intro_text {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        padding: 0px 20px 0px 20px;
+        color: white;
+
+    }
+
+    .intro_img {
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .item_title-about {
+        color: #FFB901;
+        padding: 0 0px 20px 0px;
+        border-bottom: 1px solid #21C183;
+    }
+
+    .item_description {
+        color: white;
+
+
+    }
+
 }
