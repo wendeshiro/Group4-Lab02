@@ -4,8 +4,13 @@ html {
     font-family: Ubuntu;
 }
 
+.hero {
+    background-color: #EBEBEB;
+}
+
 .blog,
-.portfolio {
+.portfolio,
+.clients {
     display: grid;
     justify-items: center;
     align-items: center;
@@ -14,13 +19,15 @@ html {
 }
 
 .blog_title,
-.portfolio_title {
+.portfolio_title,
+.clients_title {
     text-align: center;
     font-size: 28px;
 }
 
 .blog_description,
-.portfolio_description {
+.portfolio_description,
+.clients_description {
     font-size: 12px;
     color: #a3a3a3;
     text-align: center;
@@ -146,10 +153,10 @@ html {
     font-weight: 500;
 }
 
-
 .page_footer {
     display: grid;
     grid-template-rows: 1fr 4fr;
+    background-color: #0E2E4E;
 }
 
 .footer_intro {
@@ -282,10 +289,14 @@ html {
     margin-bottom: 10px;
     padding-bottom: 5px;
     display: inline-block;
-
     border-bottom: 2px solid #FFB901;
     width: 100%;
     grid-row: 1 / 2;
+}
+
+.footer_item-news {
+    display: grid;
+    grid-template-rows: 80px 1fr;
 }
 
 .description_users {
@@ -368,6 +379,7 @@ html {
     height: 25px;
 }
 
+/* phone */
 @media screen and (max-width: 39.9375em) {
 
     .services_items {
@@ -476,8 +488,43 @@ html {
     .portfolio_items .item_icon-portfolio {
         display: none;
     }
+
+    /* Kassidy start */
+    .header_logo {
+        display: grid;
+        place-items: left;
+        padding: 20px;
+    }
+
+    .header_nav {
+        display: none;
+    }
+
+    .footer_intro {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        place-content: center;
+        padding: 30px 70px 30px 70px;
+    }
+
+    .footer_intro .intro_text {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        padding: 0px 20px 0px 20px;
+        color: white;
+        font-size: 12px;
+        text-align: left;
+    }
+
+    .intro_img {
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    /* Kassidy End */
 }
 
+/* tablet */
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
 
     .services_items {
@@ -648,8 +695,118 @@ html {
     .portfolio_items .item_icon-portfolio {
         display: none;
     }
+
+    /* Kassidy Start */
+    .footer_intro {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        place-content: center;
+        padding: 30px 70px 30px 70px;
+    }
+
+    .footer_intro .intro_text {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        padding: 0px 20px 0px 20px;
+        color: white;
+        font-size: 12px;
+        text-align: left;
+    }
+
+    .intro_img {
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .item_title-about {
+        color: #FFB901;
+        padding: 0 0px 20px 0px;
+        border-bottom: 1px solid #21C183;
+    }
+
+    .item_description {
+        color: white;
+    }
+
+    .header_nav {
+        justify-content: flex-end;
+    }
+
+    .header_nav_item {
+        display: flex;
+        height: 64px;
+        width: 126.024px;
+        padding: 10px;
+    }
+
+    .header_nav_item:nth-child(1) {
+        background-color: #25C389;
+    }
+
+    .header_nav_item:nth-child(2) {
+        background-color: #FFB901;
+    }
+
+    .header_nav_item:nth-child(3) {
+        background-color: #DE6262;
+    }
+
+    .header_nav_item:nth-child(4) {
+        background-color: #19b2de;
+    }
+
+    .header_nav_item:nth-child(5) {
+        background-color: #265787;
+    }
+
+    .header_nav_list a {
+        color: white;
+        text-decoration: none;
+        align-self: flex-end;
+    }
+
+    .header_nav_list {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .header_logo {
+        display: grid;
+        place-items: center;
+        padding: 20px;
+    }
+
+    .clients_items {
+        display: grid;
+        grid-template-columns: 189px 189px 189px;
+        grid-template-rows: 128px 128px;
+        align-items: center;
+        column-gap: 16px;
+        row-gap: 16px;
+    }
+
+    .clients {
+        margin-top: 71.5px;
+        margin-bottom: 60px;
+        row-gap: 37px;
+    }
+
+    .clients_item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 128px;
+        width: 189px;
+        background-color: #F3F3F3;
+    }
+
+    /* Kassidy End */
+
 }
 
+/* desktop */
 @media screen and (min-width: 64em) {
     .services_items {
         display: grid;
@@ -767,6 +924,7 @@ html {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 100px;
+        column-gap: 20px;
     }
 
     .footer_item-about {
@@ -804,4 +962,127 @@ html {
     .portfolio_item:hover .item_icon-portfolio {
         opacity: 100;
     }
+
+    /* Kassidy Start */
+
+    .footer_intro {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        place-content: center;
+        padding: 30px 70px 30px 70px;
+    }
+
+    .footer_intro .intro_text {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        padding: 0px 20px 0px 20px;
+        color: white;
+        font-size: 12px;
+        text-align: left;
+    }
+
+    .intro_img {
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .item_title-about {
+        color: #FFB901;
+        padding: 0 0 20px 20px;
+        border-bottom: 2px solid #21C183;
+    }
+
+    .item_description {
+        color: white;
+        padding: 20px;
+    }
+
+    .header_nav {
+        justify-content: flex-end;
+    }
+
+
+
+    .header_nav_item {
+        display: flex;
+        height: 64px;
+        width: 126.024px;
+        padding: 10px;
+    }
+
+    .header_nav_item:nth-child(1) {
+        background-color: #25C389;
+    }
+
+    .header_nav_item:nth-child(2) {
+        background-color: #FFB901;
+    }
+
+    .header_nav_item:nth-child(3) {
+        background-color: #DE6262;
+    }
+
+    .header_nav_item:nth-child(4) {
+        background-color: #19b2de;
+    }
+
+    .header_nav_item:nth-child(5) {
+        background-color: #265787;
+    }
+
+    .header_nav_list a {
+        color: white;
+        text-decoration: none;
+        align-self: flex-end;
+    }
+
+    .header_nav_list {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .header_logo {
+        display: grid;
+        place-items: left;
+        padding: 20px;
+    }
+
+    .header_container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .clients_items {
+        display: grid;
+        grid-template-columns: 189px 189px 189px 189px 189px;
+        grid-row: 1fr;
+        justify-content: center;
+        column-gap: 32px;
+        width: 100%;
+    }
+
+    .clients {
+        margin-top: 71.5px;
+        margin-bottom: 60px;
+        row-gap: 37px;
+    }
+
+    .clients_item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 128px;
+        width: 189px;
+        background-color: #F3F3F3;
+        overflow: hidden;
+    }
+
+    .clients_item img {
+        width: 100%;
+        display: block;
+    }
+
+    /* Kassidy End */
 }
