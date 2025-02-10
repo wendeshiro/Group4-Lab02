@@ -7,7 +7,8 @@ html {
 
 
 .blog,
-.portfolio {
+.portfolio,
+.clients {
     display: grid;
     justify-items: center;
     align-items: center;
@@ -16,13 +17,15 @@ html {
 }
 
 .blog_title,
-.portfolio_title {
+.portfolio_title,
+.clients_title {
     text-align: center;
     font-size: 28px;
 }
 
 .blog_description,
-.portfolio_description {
+.portfolio_description,
+.clients_description {
     font-size: 12px;
     color: #a3a3a3;
     text-align: center;
@@ -461,6 +464,29 @@ html {
         /* border: solid 5px cornflowerblue; */
     }
 
+    .clients_items {
+        display: grid;
+        grid-template-columns: 189px 189px 189px;
+        grid-template-rows: 128px 128px;
+        align-items: center;
+        column-gap: 16px;
+        row-gap: 16px;
+    }
+
+    .clients {
+        margin-top: 71.5px;
+        margin-bottom: 60px;
+        row-gap: 37px;
+    }
+
+    .clients_item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 128px;
+        width: 189px;
+        background-color: #F3F3F3;
+    }
 
 }
 
@@ -644,5 +670,35 @@ html {
     .header_container {
         display: grid;
         grid-template-columns: 1fr 2fr;
+    }
+
+    .clients_items {
+        display: grid;
+        grid-template-columns: 189px 189px 189px 189px 189px;
+        grid-row: 1fr;
+        justify-content: center;
+        column-gap: 32px;
+        width: 100%;
+    }
+
+    .clients {
+        margin-top: 71.5px;
+        margin-bottom: 60px;
+        row-gap: 37px;
+    }
+
+    .clients_item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 128px;
+        width: 189px;
+        background-color: #F3F3F3;
+        overflow: hidden;
+    }
+
+    .clients_item img {
+        width: 100%;
+        display: block;
     }
 }
