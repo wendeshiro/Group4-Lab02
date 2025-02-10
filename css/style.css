@@ -236,12 +236,6 @@ html {
         display: grid;
         place-items: left;
         padding: 20px;
-        /* border: solid 5px cornflowerblue; */
-    }
-
-    .header_container {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
     }
 
     .header_nav {
@@ -412,6 +406,62 @@ html {
         color: white;
 
     }
+
+
+    .header_nav {
+        justify-content: flex-end;
+    }
+
+
+
+    .header_nav_item {
+        display: flex;
+        height: 64px;
+        width: 126.024px;
+        padding: 10px;
+    }
+
+    .header_nav_item:nth-child(1) {
+        background-color: #25C389;
+    }
+
+    .header_nav_item:nth-child(2) {
+        background-color: #FFB901;
+    }
+
+    .header_nav_item:nth-child(3) {
+        background-color: #DE6262;
+    }
+
+    .header_nav_item:nth-child(4) {
+        background-color: #19b2de;
+    }
+
+    .header_nav_item:nth-child(5) {
+        background-color: #265787;
+    }
+
+    .header_nav_list a {
+        color: white;
+        text-decoration: none;
+        align-self: flex-end;
+    }
+
+    .header_nav_list {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .header_logo {
+        display: grid;
+        place-items: center;
+        padding: 20px;
+        /* border: solid 5px cornflowerblue; */
+    }
+
+
 }
 
 @media screen and (min-width: 64em) {
@@ -539,4 +589,60 @@ html {
 
     }
 
+    .header_nav {
+        justify-content: flex-end;
+    }
+
+
+
+    .header_nav_item {
+        display: flex;
+        height: 64px;
+        width: 126.024px;
+        padding: 10px;
+    }
+
+    .header_nav_item:nth-child(1) {
+        background-color: #25C389;
+    }
+
+    .header_nav_item:nth-child(2) {
+        background-color: #FFB901;
+    }
+
+    .header_nav_item:nth-child(3) {
+        background-color: #DE6262;
+    }
+
+    .header_nav_item:nth-child(4) {
+        background-color: #19b2de;
+    }
+
+    .header_nav_item:nth-child(5) {
+        background-color: #265787;
+    }
+
+    .header_nav_list a {
+        color: white;
+        text-decoration: none;
+        align-self: flex-end;
+    }
+
+    .header_nav_list {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .header_logo {
+        display: grid;
+        place-items: left;
+        padding: 20px;
+    }
+
+    .header_container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
 }
